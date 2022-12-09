@@ -26,11 +26,11 @@ cp ./tnsnames.ora /opt/oracle/instantclient
 
 cd ~/
 
-echo 'export ORACLE_HOME=/opt/oracle/instantclient' >> /home/$USER/.bashrc
-echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME' >> /home/$USER/.bashrc
-echo 'export OCI_HOME=/opt/oracle/instantclient' >> /home/$USER/.bashrc
-echo 'export OCI_LIB_DIR=/opt/oracle/instantclient' >> /home/$USER/.bashrc
-echo 'export OCI_INCLUDE_DIR=/opt/oracle/instantclient/sdk/include' >> /home/$USER/.bashrc
-echo 'export PATH=$ORACLE_HOME:$PATH' >> /home/$USER/.bashrc
+echo 'export ORACLE_HOME=/opt/oracle/instantclient' >> /home/$1/.bashrc
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME' >> /home/$1/.bashrc
+echo 'export OCI_HOME=/opt/oracle/instantclient' >> /home/$1/.bashrc
+echo 'export OCI_LIB_DIR=/opt/oracle/instantclient' >> /home/$1/.bashrc
+echo 'export OCI_INCLUDE_DIR=/opt/oracle/instantclient/sdk/include' >> /home/$1/.bashrc
+echo 'export PATH=$ORACLE_HOME:$PATH' >> /home/$1/.bashrc
 
 source ~/.bashrc

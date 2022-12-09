@@ -8,8 +8,7 @@ cp -r ./oracle-instantclient/ /tmp
 
 sudo mkdir -p /opt/oracle
 sudo chown -R $USER /opt/oracle/
-sudo apt install unzip -y
-sudo apt install zip libaio1 -y
+sudo apt-get install -y build-essential unzip libaio1
 
 unzip /tmp/oracle-instantclient/instantclient-sdk-linux.x64-12.2.0.1.0.zip -d /opt/oracle
 unzip /tmp/oracle-instantclient/instantclient-sqlplus-linux.x64-12.2.0.1.0.zip -d /opt/oracle
